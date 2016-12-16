@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg0">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/linTop">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Name :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:layout_weight="2"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/question_man"
+            android:id="@+id/imageView2"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/take_photo"
+            android:id="@+id/imageView4"
+            android:layout_margin="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linButton">
+
+        <Button
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSave"
+            android:id="@+id/button4"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="ListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickListView"
+            android:id="@+id/button5"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="appewtc.masterung.whereltc.ServiceActivity"
+        android:layout_below="@+id/linTop"
+        android:layout_above="@+id/linButton" />
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Where LTC</string>
+
+    <string name="signUp">Sign Up</string>
+
+    <string name="title_have_space">Have Space</string>
+    <string name="message_have_space">Please Fill All Every Blank</string>
+    <string name="title_user_fale">User False</string>
+    <string name="message_user_false">No This User in my Database</string>
+    <string name="title_pass_false">Password False</string>
+    <string name="message_pass_false">Please Try Again Password False</string>
+    <string name="title_activity_service">Map</string>
+    <string name="title_noimage">No Image</string>
+    <string name="message_noimage">Please Choose Image</string>
+
+
+</resources>
